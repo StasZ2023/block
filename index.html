@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        html{
+            background-color:black;
+        }
+        .block{
+            width: 300px;
+            margin:0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:300px;
+            /* background-color: rgba(240, 248, 255, 0.699); */
+        }
+        .con{
+            /* align-self: center; */
+            width:10em;
+            height:10em;
+            background-color:rgb(46, 46, 46);
+            box-shadow: 0 0 10px 2px yellow;
+            border:2px solid rgb(0, 238, 255);
+        }
+        .item{
+
+            width:10em;
+            height:10em;
+            background-color: rgb(46,46,46);
+            position: relative;
+            transform: rotate(45deg);
+            border:2px solid rgb(255, 255, 120);
+            box-shadow: 0 0 50px 5px rgb(0, 247, 255);
+        }
+        img{
+            display: none;
+            transform: rotate(-45deg);
+            width:100%;
+            padding-top:10px;
+            padding-left:5px;
+            box-shadow: 0 0 50px 0 pink;
+        }
+        .item:hover img{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="con">
+            <div class="item">
+                <img src="sv.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
